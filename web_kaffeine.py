@@ -9,6 +9,7 @@ def read_csv():
 def ping_sites(links):
 	for link in links:
 		response = requests.get(link)
+		print(f"Pinged {link}")
 
 while True:
 	links = read_csv()
